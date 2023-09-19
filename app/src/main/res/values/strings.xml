@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SocialBartender</string>
+    <string name="modo_de_preparo">Modo de preparo:</string>
+    <string name="ingredientes">Ingredientes:</string>
+</resources>

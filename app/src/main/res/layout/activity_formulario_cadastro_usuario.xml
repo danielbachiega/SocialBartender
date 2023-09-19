@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_formulario_cadastro_usuario_textinputlayout_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_formulario_cadastro_usuario_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome"
+                android:inputType="textPersonName"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_formulario_cadastro_usuario_textinputlayout_sobrenome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_cadastro_usuario_textinputlayout_nome"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_formulario_cadastro_usuario_sobrenome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sobrenome"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_formulario_cadastro_usuario_textinputlayout_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_cadastro_usuario_textinputlayout_sobrenome"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_formulario_cadastro_usuario_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Login"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Switch
+            android:id="@+id/activity_formulario_cadastro_usuario_troca"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:minHeight="48dp"
+            android:text="Deseja alterar a senha?"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_cadastro_usuario_textinputlayout_login"
+            app:layout_constraintVertical_weight="1"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_formulario_cadastro_usuario_textinputlayout_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_cadastro_usuario_troca"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_formulario_cadastro_usuario_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha"
+                android:inputType="numberPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_formulario_cadastro_usuario_textinputlayout_confirma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_cadastro_usuario_textinputlayout_senha"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_formulario_cadastro_usuario_confirma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirme a Senha"
+                android:inputType="numberPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Switch
+            android:id="@+id/activity_formulario_cadastro_usuario_maior"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:minHeight="48dp"
+            android:text="Tenho mais de 18 anos"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_cadastro_usuario_textinputlayout_confirma"
+            app:layout_constraintVertical_weight="1"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Button
+            android:id="@+id/activity_formulario_cadastro_usuario_salva"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Salvar"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_cadastro_usuario_maior" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

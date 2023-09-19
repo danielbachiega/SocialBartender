@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activity.DetalhesDeReceitaActivity">
+        <TextView
+            android:id="@+id/activity_detalhes_de_receita_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/activity_detalhes_de_receita_imagem"
+            tools:layout_editor_absoluteX="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/activity_detalhes_de_receita_imagem"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_detalhes_de_receita_user"
+            />
+
+        <TextView
+            android:id="@+id/activity_detalhes_de_receita_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#80FFFFFF"
+            android:elevation="10dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_detalhes_de_receita_imagem"
+            app:layout_constraintTop_toBottomOf="@+id/activity_detalhes_de_receita_imagem"
+            tools:layout_editor_absoluteX="16dp"
+            tools:text="Cachaça, limão, açucar  refinado" />
+
+
+
+        <TextView
+            android:id="@+id/activity_detalhes_de_receita_titulo_ingredientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="16dp"
+            android:gravity="start|top"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/activity_detalhes_de_receita_nome"
+            tools:layout_editor_absoluteX="16dp"
+            android:text="@string/ingredientes"/>
+        <TextView
+            android:id="@+id/activity_detalhes_de_receita_ingredientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:gravity="start|top"
+            app:layout_constraintTop_toBottomOf="@+id/activity_detalhes_de_receita_titulo_ingredientes"
+            tools:layout_editor_absoluteX="16dp"
+            />
+        <TextView
+            android:id="@+id/activity_detalhes_de_receita_titulo_preparo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="16dp"
+            android:gravity="start|top"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/activity_detalhes_de_receita_ingredientes"
+            tools:layout_editor_absoluteX="16dp"
+            android:text="@string/modo_de_preparo"
+            android:autofillHints="" />
+        <TextView
+            android:id="@+id/activity_detalhes_de_receita_preparo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:gravity="start|top"
+            app:layout_constraintTop_toBottomOf="@+id/activity_detalhes_de_receita_titulo_preparo"
+            tools:layout_editor_absoluteX="16dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
